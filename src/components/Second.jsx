@@ -1,13 +1,14 @@
 import React from "react";
 
 function Second() {
-    const headingStyle = {
-        fontSize: "24px",
-        width: "100%",
-        fontWeight: 700,
-      };
+  const headingStyle = {
+    fontSize: "24px",
+    width: "100%",
+    fontWeight: 700,
+  };
+
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between pl-40 py-10 bg-white">
+    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 bg-white">
       {/* Left Side - Testimonial Content */}
       <div className="md:w-1/2 text-center md:text-left">
         <p className="text-green-900 font-semibold text-sm md:text-base">Feedback</p>
@@ -22,7 +23,7 @@ function Second() {
             src="https://img.icons8.com/ios/50/quote-right.png" 
             alt="quote-right"
           />
-          <p style={headingStyle} className=" text-gray-700 text-base md:text-lg mt-2">
+          <p style={headingStyle} className="text-gray-700 text-base md:text-lg mt-2">
             The instructor was knowledgeable and engaging, and I learned a lot in this course.
           </p>
         </div>
@@ -43,15 +44,14 @@ function Second() {
 
       {/* Right Side - Image */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-  <div className="relative pl-6 rounded-lg max-w-4xl w-full">
-    <img
-      src="https://images.pexels.com/photos/8541318/pexels-photo-8541318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Product"
-      className="shadow-lg rounded-lg max-w-4xl w-full h-auto"
-    />
-  </div>
-</div>
-
+        <div className="relative pl-6 rounded-lg max-w-4xl w-full">
+          <img
+            src="https://images.pexels.com/photos/8541318/pexels-photo-8541318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Product"
+            className="shadow-lg rounded-lg max-w-4xl w-full h-auto"
+          />
+        </div>
+      </div>
     </section>
   );
 }

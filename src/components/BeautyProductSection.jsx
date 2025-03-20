@@ -1,9 +1,14 @@
 import React from "react";
-import backgound from "../assets/Beautycare.jpg";
+import background from "../assets/Beautycare.jpg";
+
 const BeautyProductSection = () => {
   return (
     <>
-<img src={backgound} alt="" className="   h-auto object-cover py-10"  />
+      <img 
+        src={background} 
+        alt="Beauty Care" 
+        className="w-full h-auto object-cover py-10 sm:h-64 md:h-80 lg:h-96" 
+      />
     </>
   );
 };

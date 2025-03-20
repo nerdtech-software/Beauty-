@@ -7,26 +7,26 @@ const BeautySection = () => {
       <section className="container mx-auto py-10 flex flex-col md:flex-row items-center gap-8 relative">
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left relative">
-          <div className="absolute -mt-16">
-            <h1 className="text-3xl sm:text-xl md:text-5xl font-bold text-gray-900 md:pl-40 absolute w-[max-content]">
-              Beauty Is{" "}
+          <div className="relative w-full sm:w-auto p-4 sm:p-0">
+            <h1 className="text-3xl sm:text-xl md:text-5xl font-bold text-gray-900 md:pl-40 w-full sm:w-[max-content]">
+              Beauty Is
               <span className="inline-block">
                 <img
                   src="https://images.pexels.com/photos/4202321/pexels-photo-4202321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Icon"
                   className="w-10 h-8 md:w-16 md:h-10 inline"
                 />
-              </span>{" "}
+              </span>
+              <br className="block sm:hidden" />
               Subjective Concept
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 ">
+            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4">
               That Can Be Defined And Perceived.
             </h1>
-            </h1>
-           
           </div>
           <br />
           <br />
-          <div className="flex flex-col md:flex-row gap-6 md:pl-40 text-center md:text-left">
+          <div className="flex flex-col md:flex-row gap-6 md:pl-40 text-center md:text-left px-4 sm:px-0">
             <div>
               <h3 className="text-lg font-semibold">What about our Product?</h3>
               <p className="text-gray-700">
