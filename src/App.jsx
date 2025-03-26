@@ -1,23 +1,47 @@
-import './App.css';
-import BeautyProductSection from './components/BeautyProductSection';
-import BeautySection from './components/BeautySection';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import HeaderBg from './components/HeaderBg';
-import MakeUp from './components/MakeUp';
-import Newsletter from './components/Newsletter';
-const App = () => {
-  return (
-   <>
-   <Header/>
-   <HeaderBg/>
-   <MakeUp/>
-   <BeautyProductSection/>
-   <BeautySection/>
-   <Newsletter/>
-   <Footer/>
-   </>
-  )
-}
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import "./App.css";
+import Checkout from "./components/CheckOut";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Payment from "./components/Payment";
+import Product from "./components/Product";
+import Home from "./Page/Home";
 
-export default App
+const Layout = () => (
+  <>
+    <Header />
+    <Outlet />
+    <Footer />
+  </>
+);
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "/payment",
+        element: <Payment />,
+      },
+    ],
+  },
+]);
+
+const App = () => {
+  return <RouterProvider router={appRouter} />;
+};
+
+export default App;
