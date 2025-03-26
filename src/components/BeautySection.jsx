@@ -20,7 +20,7 @@ const BeautySection = () => {
               <br className="block sm:hidden" />
               Subjective Concept
             </h1>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 md:pl-40 w-full sm:w-[max-content]">
               That Can Be Defined And Perceived.
             </h1>
           </div>

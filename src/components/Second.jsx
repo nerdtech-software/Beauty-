@@ -8,7 +8,7 @@ function Second() {
   };
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 bg-white">
+    <section className="flex flex-col md:flex-row items-center justify-between pl-20 py-10 bg-white ">
       {/* Left Side - Testimonial Content */}
       <div className="md:w-1/2 text-center md:text-left">
         <p className="text-green-900 font-semibold text-sm md:text-base">Feedback</p>
@@ -44,11 +44,11 @@ function Second() {
 
       {/* Right Side - Image */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-        <div className="relative pl-6 rounded-lg max-w-4xl w-full">
+        <div className="relative  rounded-lg max-w-4xl w-full inline-block justify-center content-center"> 
           <img
             src="https://images.pexels.com/photos/8541318/pexels-photo-8541318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Product"
-            className="shadow-lg rounded-lg max-w-4xl w-full h-auto"
+            className="shadow-lg rounded-lg max-w-4xl w-full h-auto justify-center"
           />
         </div>
       </div>
